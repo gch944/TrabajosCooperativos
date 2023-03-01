@@ -7,7 +7,7 @@
 #define pi 3.14
 
 int main(){
-		char c;
+
 		float a;       /* radio de la base superior   */
 		float b;          /* radio de la base inferior */
 		float altura;        /* altura  */
@@ -23,7 +23,8 @@ int main(){
         printf("Introduzca la altura del tronco (cm): ");
         scanf(" %f", &altura);
 
-        volumen=pi*altura*(pow(a,2)+a*b+pow(b,2))/3;
+        volumen=pi*altura*(a*a+a*b+b*b)/3;
         	
 masa=densidad*volumen;
-printf("\nmasa: %.2f Kg", masa);
+printf("\n masa: %.2f Kg", masa);
+}
